@@ -15,4 +15,5 @@ COPY config/php7.0-fpm.pid /run/php/php7.0-fpm.pid
 
 EXPOSE 9000
 
+RUN service php7.0-fpm start
 CMD php-fpm7.0 -F
